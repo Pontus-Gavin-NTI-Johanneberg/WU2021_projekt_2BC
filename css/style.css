@@ -1,19 +1,22 @@
 body {
     display: grid;
     grid-template-areas: 
-    'la content ra'
+    'la conten ra'
     'f f f'
     ;
     margin: 0px;
+    grid-template-columns: 6fr 10fr 6fr;
 }
 header{
     position: fixed;
     width: 100%;
     top: 0;
-    height: 10%;
-    justify-content: center;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(83, 183, 219);
     align-items: center;
-    background-color: grey;
+    justify-content: center;
 }
 
 .leftcolumn{
@@ -21,8 +24,8 @@ header{
 }
 
 .middlecolumn{
-    padding-top: 60px;
-    grid-area: content;
+    padding-top: 12vh;
+    grid-area: conten;
 }
 .rightcolumn{
     grid-area: ra;
@@ -32,23 +35,9 @@ footer{
     grid-area: f;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.middlecolumn article{
+    
+}
 
 
 /*nedan är funktionalitetskoden*/
@@ -56,7 +45,7 @@ footer{
     .menu{
         height: 100vh;
         width: 30vw;
-        background-image: linear-gradient(to right, rgb(140, 247, 247) , rgb(210, 237, 247));
+        background-image: linear-gradient(to right, rgb(140, 247, 247) , rgb(83, 183, 219));
         position: fixed;
         top: 0;
         left: -90vw;
@@ -105,7 +94,6 @@ nav footer{
 }
 .menu-button{
     cursor: pointer;
-    display: inline;
 }
 nav article{
     background-color: blue;
@@ -113,7 +101,7 @@ nav article{
     margin: 5px;
 }
 .menu-button i.material-icons{
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .show{
