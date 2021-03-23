@@ -23,8 +23,8 @@
     background-color: #757575;
     box-shadow: 5px 5px 3px 3px rgba(0,0,0,0.75);
     display: flex;
-    text-align: center;
     flex-direction: column;
+    padding: 5px;
 }
 #gridar1{
     grid-area: gar1;
@@ -75,7 +75,7 @@
 .Programs section aside article{
     width: 33vw;
     height: 20vh;
-    background-color: rgb(1, 149, 235);
+    background-color: #3B19FF;
     margin: 0px 2px;
     display: flex;
     align-items: center;
@@ -86,8 +86,8 @@
 }
 
 .Programs section aside article a{
-    color: white;
-    background-color: #f44336;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
@@ -152,7 +152,7 @@ body{
     width: 0px;
 }
 p{
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 header{
     position: fixed;
@@ -165,6 +165,7 @@ header{
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .leftcolumn{
@@ -313,23 +314,32 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: black;
+    color: white;
     text-decoration: none;
+}
+nav a p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .nava1{
     grid-area: navarticle1;
+    background-image: url("/img/karsten-winegeart-0Wra5YYVQJE-unsplash-photoshop.jpg");
+    background-size: cover;
 }
 .nava2{
     grid-area: navarticle2;
+    background-image: url("/img/jonathan-borba-zfPOelmDc-M-unsplash-photoshop.png.jpg");
+    background-size: cover;
 }
 .nava3{
     grid-area: navarticle3;
-    background-image: url("");
+    background-image: url("/img/michele-blackwell-przZDqzZKpk-unsplash-photoshop.jpg");
+    background-size: cover;
 }
 .nava4{
     grid-area: navarticle4;
+    background-image: url("/img/jair-lazaro-D3UqzqwtdRw-unsplash-photoshop.jpg");
+    background-size: cover;
 }
 nav footer{
     grid-area: return_home;
