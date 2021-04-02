@@ -50,6 +50,7 @@
     's5'
     'f'
     ;
+    
 }
 .Programs section{
     display: grid;
@@ -58,6 +59,8 @@
     'info'
     'programreccomendations'
     ;
+    width: 98vw;
+    padding: 0vh 1vw 0vh 1vw;
 }
 .Programs section h3{
     grid-area: title;
@@ -68,14 +71,13 @@
 .Programs section aside{
     grid-area: programreccomendations;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
 }
 .Programs section aside article{
-    width: 33vw;
+    width: 32vw;
     background-color: #3B19FF;
-    margin: 0px 2px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -113,6 +115,7 @@
     's4'
     'f'
     ;
+    width: 100vw;
 }
 
 .influencers section{
@@ -120,8 +123,8 @@
     grid-template-areas: 
     'ar channel'
     ;
-    margin: 0px 5px 10px 5px;
-    grid-template-columns: 60% 40%;
+    padding: 0px 1vw 10px 1vw;
+    grid-template-columns: 60%vw 40%vw;
 }
 .influencers section article {
     grid-area: ar;
@@ -129,9 +132,9 @@
 
 .influencers section .channel{
     grid-area: channel;
-    margin: 5px 5px 0px 0px;
+    margin: 5px 0px 0px 0px;
     height: 40vh;
-    width: 40vw;
+    width: 39vw;
 }
 /*nedan är supplements kod*/
 .supplements{
@@ -234,11 +237,11 @@ header{
 }
 .intro{
     grid-area: In;
-    padding-top: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0vh 1vh 0vh 1vh;
+    padding: 12vh 1vh 0vh 1vh;
+    width: 98vw;
 }
 /*nedan är device-koden*/
 @media screen and (max-width: 503px){
@@ -264,11 +267,11 @@ header{
         font-size: 20px;
     }
     iframe{
-        width: 100vw;
+        width: 98vw;
         height: 45vh;
     }
     .Programs section aside article{
-        width: 100vw;
+        width: 98vw;
         margin: 2px 0px;
     }
     .Programs section aside{
