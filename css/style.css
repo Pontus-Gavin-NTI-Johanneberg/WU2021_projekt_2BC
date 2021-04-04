@@ -7,6 +7,12 @@
     ;
     grid-template-columns: 6fr 10fr 6fr;
 }
+
+.index .intro{
+    margin: 0px;
+    width: initial;
+}
+
 /* nedan är drugs.html kod*/
 .drugs{
     display: grid;
